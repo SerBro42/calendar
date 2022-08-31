@@ -52,5 +52,12 @@ export class AppComponent {
     event.end = newEnd;
     this.refresh.next();
   }
-  //title = 'calendar';
+
+  addEvent(date: Date): void {
+    this.events.push({
+      start: date,
+      title: 'New event',
+    });
+    this.refresh.next();
+  }
 }
