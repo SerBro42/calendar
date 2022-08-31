@@ -8,6 +8,7 @@ import { CalendarHeaderModuleModule } from './utilities/calendar-header-module/c
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    FontAwesomeModule,
     CommonModule,
     AppRoutingModule,
     BrowserAnimationsModule,
